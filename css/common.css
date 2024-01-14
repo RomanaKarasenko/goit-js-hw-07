@@ -76,12 +76,10 @@ ul {
 
 h1,
 #name-output {
- 
   font-size: 24px;
   font-weight: 600;
   line-height: 1.33; /* 133.333% */
 }
-
 
 .login-form {
   display: flex;
@@ -91,7 +89,6 @@ h1,
   padding: 24px;
   background-color: white;
   width: fit-content;
-  
 }
 
 .login-form label {
@@ -99,19 +96,18 @@ h1,
   flex-direction: column;
   align-items: flex-start;
   font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
-letter-spacing: 0.64px; 
-gap: 8px;
-  
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  gap: 8px;
 }
 .login-form input {
-width: 360px;
-height: 40px;
-justify-content: center;
-align-items: center; 
-gap: 8px;
+  width: 360px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 button {
@@ -119,29 +115,64 @@ button {
   padding: 8px 16px;
   justify-content: center;
   align-items: center;
-  gap: 10px; 
+  gap: 10px;
   border-radius: 8px;
-  background-color: #4E75FF; 
+  background-color: #4e75ff;
   height: 40px;
   color: white;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
-  letter-spacing: 0.64px; 
+  letter-spacing: 0.64px;
   margin-top: 16px;
-
 }
 
-button:hover{
-  background-color: #6C8CFF;
+button:hover {
+  background-color: #6c8cff;
 }
 .widget {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 88px;
-    border-radius: 8px;
-    background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 88px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+[data-destroy] {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #ff4e4e;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+[data-destroy]:hover {
+  background: #ff7070;
+}
+
+#controls input {
+  border-radius: 8px;
+  border: 1px solid #808080;
+  height: 40px;
+  padding: 8px 72px;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+#controls {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 16px;
 }
