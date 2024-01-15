@@ -15,14 +15,21 @@ registerForm.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
-  const form = event.target;
-  const email = form.elements.email.value;
-  const password = form.elements.password.value;
+  const { email, password } = event.target.elements;
 
-  if (email === "" || password === "") {
-    return alert("All form fields must be filled in");
+  const emailValue = email.value.trim();
+  const passwordValue = password.value.trim();
+
+  if (emailValue === "" || passwordValue === "") {
+    alert("All form fields must be filled in");
+    return;
   }
 
-  console.log(`Login: ${email}, Password: ${password}`);
-  form.reset();
+  const userData = {
+    email: emailValue,
+    password: passwordValue,
+  };
+
+  console.log(userData);
+  event.target.reset();
 }
